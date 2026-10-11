@@ -91,6 +91,12 @@ button:disabled{cursor:wait;opacity:.65}.tour-video{pointer-events:none}
  .home-route .tour-arrow,.home-route .tour-arrow svg{width:19px;height:19px}
  .home-route .tour-arrow{flex-basis:19px}
 }
+@media(max-width:760px){
+ @supports(-webkit-touch-callout:none){
+  .home-route,.category-choice,.drink-card{-webkit-mask-image:-webkit-radial-gradient(white,black)}
+  .home-route:focus-visible,.category-choice:focus-visible,.drink-card:focus-visible{-webkit-mask-image:none}
+ }
+}
 @media(min-width:761px) and (max-height:700px){
  .cafe-shell{--route-size:clamp(143.52px,23.92svh,174.8px)}
  .home-route{font-size:17.48px;gap:8px}.home-route .route-icon{width:57px;height:57px}
